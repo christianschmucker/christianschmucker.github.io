@@ -1,0 +1,17 @@
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #0b0c10;
+        color: #e5e6e7;
+    }
+    a {
+      color: #66fcf1;
+    }
+}
