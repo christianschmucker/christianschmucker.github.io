@@ -173,14 +173,28 @@ p{
 }
 
 .project-container{
- margin-bottom: 20px;
- height: 500px;
- width: auto;
- display: inline-block;
- padding: 10px;
- background-color: #0b0c10;
- border-radius: 4px;
- transition: 0.3s;
+  background-color: #7fa4e3;
 }
+
+.project-card{
+  background-color: #0b0c10;
+}
+
+.circle-image {
+    border: 8px solid white;
+    box-shadow: 0 0 0 8px #7fa4e3;
+}
+
+.link-icons {
+  background-color: #142138;
+  border: 1px solid #142138;
+}
+.link-icon {
+  color: #7fa4e3;
+}
+.link-icon .fa {
+  color: #7fa4e3;
+}
+
 
 }
