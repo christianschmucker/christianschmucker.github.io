@@ -11,17 +11,98 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/balloon.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous" />
 
 </head>
 <body>
-  <div class="container">
-      <div class="row" id="header-row">
-          <h1 id="Title">Welcome!</h1>
+  <div id="root">
+    <div class="container">
+      <div class="circle-image-container">
+        <img src="images/me.jpg" alt="me" class="circle-image">
       </div>
+      <h1 class="title">Hi! I'm Chris</h1>
+      <p class="subtitle">I study Informatics at the Technical University of Munich.</p>
+    </div>
+  </div>
 
-      <span id="searchbox-wrapper"><input type="text" id="searchbox" placeholder="Search"/></span>
+  <div class="projects">
+    <div class="container">
+      <h1 class="title">My Projects</h1>
+      <div class="row">
+        <div class="four columns">
+          <div class="project-container">
+            <a href="https://github.com/christianschmucker/PathfindingVisualizer">
+              <div class="project-card">
+                <h3>Pathfinding Visualizer</h3>
+                <p>A pathfinding visualizer written in Java for A* Search and Dijkstra's Algorithm. UI design implemented with Swing.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="project-container">
+            <a href="https://github.com/christianschmucker/Snake">
+              <div class="project-card">
+                <h3>Neon Snake</h3>
+                <p>Another implementation of the famous retro game Snake in Java using Swing.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="project-container">
+            <a href="https://github.com/christianschmucker/newsApp">
+              <div class="project-card">
+                <h3>Dot News</h3>
+                <p>A minimalistic German News App written in Dart with Google's UI toolkit Flutter</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
+
+  <div class="link-bar">
+    <div class="row">
+      <div class="link-icons">
+          <a class="link-icon" href="https://www.linkedin.com/in/christian-s-488525174/" target="_blank">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a class="link-icon" href="https://github.com/christianschmucker" target="_blank">
+              <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+
+          <button id="copy" class="copyEmailBtn link-icon" aria-label="Copy Email" data-balloon-pos="right" onclick="copyEmail()">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+  function copyEmail() {
+    const el = document.createElement('textarea');
+    el.value = "cfschmucker@web.de";
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+
+    var x = document.getElementById("copy");
+    x.setAttribute('aria-label', "Copied!");
+
+    document.body.removeChild(el);
+
+  }
+  </script>
 </body>
+
 </html>
