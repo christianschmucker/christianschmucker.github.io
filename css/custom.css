@@ -133,6 +133,7 @@ p{
   margin-top: -10px;
 }
 
+
 .project-card{
   text-align: center;
   border-radius: 4px;
@@ -168,7 +169,7 @@ p{
 }
 
 .subtitle{
-  color: #6d8bbd;
+  color: #ededed;
   font-size: 18px;
 }
 

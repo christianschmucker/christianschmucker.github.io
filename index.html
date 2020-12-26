@@ -65,6 +65,7 @@
             </a>
           </div>
         </div>
+
       </div>
     </div>
 
@@ -89,19 +90,19 @@
 
 
   <script>
-  function copyEmail() {
-    const el = document.createElement('textarea');
-    el.value = "cfschmucker@web.de";
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
+    function copyEmail() {
+      const el = document.createElement('textarea');
+      el.value = "cfschmucker@web.de";
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
 
-    var x = document.getElementById("copy");
-    x.setAttribute('aria-label', "Copied!");
+      var x = document.getElementById("copy");
+      x.setAttribute('aria-label', "Copied!");
 
-    document.body.removeChild(el);
+      document.body.removeChild(el);
+    }
 
-  }
   </script>
 </body>
 
