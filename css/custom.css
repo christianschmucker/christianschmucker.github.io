@@ -120,10 +120,10 @@ p{
 
  .project-container{
   margin-bottom: 20px;
-  height: 500px;
+  height: 350px;
   width: auto;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
   background-color: navy;
   border-radius: 4px;
   transition: 0.3s;
