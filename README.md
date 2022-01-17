@@ -1,4 +1,4 @@
-# christianschmucker.github.io
-My personal github.io page. 
+# christianschmucker.com
+My personal website. 
 
-https://christianschmucker.github.io
+christianschmucker.com
