@@ -1,4 +1,3 @@
-# christianschmucker.com
-My personal website. 
-
-christianschmucker.com
+# My personal website. 
+## Portfolio and Stuff...
+https://christianschmucker.com
