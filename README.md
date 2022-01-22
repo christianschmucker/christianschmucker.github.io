@@ -1,4 +1,3 @@
-# christianschmucker.github.io
-My personal github.io page. 
-
-https://christianschmucker.github.io
+# My personal website. 
+## Portfolio and Stuff...
+https://christianschmucker.com
